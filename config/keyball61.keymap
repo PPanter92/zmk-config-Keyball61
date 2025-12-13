@@ -410,10 +410,10 @@
 
         number {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_N0  &trans  &trans  &trans  &trans  &trans
+&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp RA(NON_US_BACKSLASH)  &kp KP_DIVIDE    &kp LS(N8)       &kp LS(N9)       &trans        &trans
+&trans  &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans                          &kp KP_MULTIPLY           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &sl 6
+&trans  &trans  &trans  &trans  &trans  &trans                  &sHoch                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD    &kp COMMA
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &kp LS(MINUS)
 &trans  &trans                          &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -422,10 +422,10 @@
 
         numbers2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp X   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp X   &kp Y   &kp Z   &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp T   &trans  &kp I   &kp E   &pi             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &dx     &tan    &cos    &sin    &kp A           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ddx    &ln     &exp    &sqrt   &kp SCROLLLOCK  &kp KP_NUM
 &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -434,11 +434,11 @@
 
         tab {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &mkp MB3  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans
-&trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans                 &trans     &trans             &trans     &trans  &trans                    &trans  &mkp MB1         &mkp MB3     &mkp MB2           &trans     &trans
+&kp RA(RIGHT_BRACKET)  &kp RA(Q)  &trans             &kp RA(E)  &trans  &trans                    &max    &kp LC(PG_UP)    &lm 8 LALT   &kp LC(PAGE_DOWN)  &kp K_APP  &kp LA(F4)
+&kp CAPS               &trans     &kp LS(RA(MINUS))  &trans     &trans  &trans                    &res    &kp LS(LC(TAB))  &lm 9 LCTRL  &kp LC(TAB)        &kp LG(D)  &kp LC(W)
+&trans                 &trans     &trans             &trans     &trans  &trans  &trans    &trans  &min    &kp LA(TAB)      &trans       &trans             &trans     &trans
+&trans  &trans                          &trans  &mo 11  &trans  &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "tab";
@@ -446,10 +446,10 @@
 
         tab2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans       &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans       &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(TAB)  &trans  &kp TAB  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(TAB)  &trans  &kp TAB  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans  &trans   &trans  &trans
 &trans  &trans                          &trans  &trans  &trans  &trans  &trans       &trans  &trans   &trans  &trans
             >;
 
@@ -458,11 +458,11 @@
 
         tab3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans         &trans  &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(PG_UP)  &trans  &kp LS(PG_DN)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(TAB)    &trans  &kp TAB        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans         &trans  &trans
-&trans  &trans                          &trans  &trans  &trans  &trans  &trans         &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(PG_UP)  &trans  &kp LS(PG_DN)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(TAB)    &trans  &kp TAB        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans         &trans  &trans
+&trans  &trans                          &trans  &trans    &trans  &trans  &trans         &trans  &trans         &trans  &trans
             >;
 
             label = "tab3";
@@ -470,10 +470,10 @@
 
         symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A   &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp RS(EQUAL)          &trans                    &trans  &trans     &trans    &trans                    &trans                    &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
+&kp LS(RIGHT_BRACKET)  &kp RA(Q)                 &trans  &kp RA(E)  &kp CAPS  &frac                     &kp RA(MINUS)             &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
+&kp LS(NUHS)           &kp A                     &sin    &cos       &tan      &sHoch                    &abs                      &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
+&kp RALT               &kp RA(NON_US_BACKSLASH)  &sqrt   &exp       &ln       &hoch   &trans    &trans  &kp RA(NON_US_BACKSLASH)  &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
 &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -482,10 +482,10 @@
 
         greek {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none   &none  &none   &none  &none                   &none  &latexParan  &latexParanOpen  &latexParanClose  &none  &none
+&none  &none   &none  &none   &none  &none                   &none  &none        &none            &none             &none  &none
+&none  &alpha  &none  &delta  &none  &gamma                  &none  &none        &none            &none             &none  &none
+&none  &none   &none  &none   &none  &none   &none    &none  &beta  &none        &none            &none             &none  &none
 &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -494,10 +494,10 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &kp UP_ARROW  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp LC(HOME)   &kp K_APPLICATION  &kp LC(END)    &trans     &kp INS
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp HOME   &kp LC(LEFT)   &kp UP_ARROW       &kp LC(RIGHT)  &kp END    &kp LC(V)
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP  &kp LEFT       &kp LS(TAB)        &kp RIGHT      &kp DOWN   &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_DN  &kp BACKSPACE  &kp DEL            &kp LC(A)      &kp LC(X)  &kp LC(C)
 &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
             >;
 
@@ -506,10 +506,10 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &kp F11  &kp F12  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans   &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans   &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans  &trans
+&trans  &trans      &trans      &trans            &trans      &trans                          &trans  &kp F10  &kp F11  &kp F12  &trans  &trans
+&trans  &trans      &trans      &trans            &trans      &kp C_VOL_UP                    &trans  &kp F7   &kp F8   &kp F9   &trans  &trans
+&trans  &kp K_STOP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp K_MUTE                      &trans  &kp F4   &kp F5   &kp F6   &trans  &trans
+&trans  &trans      &trans      &trans            &trans      &kp C_VOL_DN  &trans    &trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans
 &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans  &trans
             >;
 
