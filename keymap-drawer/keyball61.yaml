@@ -37,7 +37,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: \, s: '|'}
   - Z
   - X
@@ -59,9 +59,9 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: nav}
   - {t: number, h: toggle}
-  - F5
-  - F2
-  - $$mdi:keyboard-space$$
+  - F1
+  - F1
+  - F1
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
