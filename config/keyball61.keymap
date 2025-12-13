@@ -421,11 +421,11 @@ dummy_layer {
 
         number {
             bindings = <
-&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp RA(NON_US_BACKSLASH)  &kp KP_DIVIDE    &kp LS(N8)       &kp LS(N9)       &trans        &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp RA(NON_US_BACKSLASH)  &kp KP_DIVIDE    &kp LS(N8)       &kp LS(N9)       &trans        &trans
 &trans  &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans                          &kp KP_MULTIPLY           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &sl 6
-&trans  &trans  &trans  &trans  &trans  &trans                  &sHoch                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD    &kp COMMA
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &kp LS(MINUS)
-&trans  &trans                          &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &sHoch                          &kp KP_NUMBER_4           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD       &kp COMMA
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_NUMBER_0                 &kp KP_NUMBER_1           &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS     &kp LS(MINUS)
+&trans  &trans                          &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "number";
@@ -445,7 +445,7 @@ dummy_layer {
 
         tab {
             bindings = <
-&trans  &trans                 &trans     &trans             &trans     &trans  &trans                    &trans  &mkp MB1         &mkp MB3     &mkp MB2           &trans     &trans
+&trans                 &trans     &trans             &trans     &trans  &trans                    &trans  &mkp MB1         &mkp MB3     &mkp MB2           &trans     &trans
 &kp RA(RIGHT_BRACKET)  &kp RA(Q)  &trans             &kp RA(E)  &trans  &trans                    &max    &kp LC(PG_UP)    &lm 8 LALT   &kp LC(PAGE_DOWN)  &kp K_APP  &kp LA(F4)
 &kp CAPS               &trans     &kp LS(RA(MINUS))  &trans     &trans  &trans                    &res    &kp LS(LC(TAB))  &lm 9 LCTRL  &kp LC(TAB)        &kp LG(D)  &kp LC(W)
 &trans                 &trans     &trans             &trans     &trans  &trans  &trans    &trans  &min    &kp LA(TAB)      &trans       &trans             &trans     &trans
