@@ -269,6 +269,13 @@
             bindings = <&kp D &kp LS(N7) &kp D &kp X>;
             label = "DDX";
         };
+
+        ms_dc: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1 &mkp MB1>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -382,7 +389,7 @@
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 2   &mo 3
 &trans  &trans  &trans    &mkp MB3  &trans    &trans                  &trans  &trans    &mkp MB3  &trans    &trans  &trans
-&trans  &mo 3   &mkp MB2  &mo 2     &mkp MB1  &trans                  &trans  &mkp MB1  &mo 2     &mkp MB2  &mo 3   &trans
+&trans  &mo 3   &mkp MB2  &mo 2     &mkp MB1  &ms_dc                  &ms_dc  &mkp MB1  &mo 2     &mkp MB2  &mo 3   &trans
 &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
 &trans  &trans                                &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
             >;
@@ -447,11 +454,11 @@
 
         tab {
             bindings = <
-&trans                 &trans     &trans             &trans     &trans  &trans                  &trans  &mkp MB1         &mkp MB3     &mkp MB2           &trans     &trans
-&kp RA(RIGHT_BRACKET)  &kp RA(Q)  &trans             &kp RA(E)  &trans  &trans                  &max    &kp LC(PG_UP)    &lm 8 LALT   &kp LC(PAGE_DOWN)  &kp K_APP  &kp LA(F4)
-&kp CAPS               &trans     &kp LS(RA(MINUS))  &trans     &trans  &trans                  &res    &kp LS(LC(TAB))  &lm 9 LCTRL  &kp LC(TAB)        &kp LG(D)  &kp LC(W)
-&trans                 &trans     &trans             &trans     &trans  &trans  &trans  &trans  &min    &kp LA(TAB)      &trans       &trans             &trans     &trans
-&trans                 &trans                                           &trans  &mo 11  &trans  &trans  &trans           &trans       &trans             &trans     &trans
+&trans                 &trans     &trans             &trans     &trans  &trans                   &trans  &mkp MB1         &mkp MB3     &mkp MB2           &trans     &trans
+&kp RA(RIGHT_BRACKET)  &kp RA(Q)  &trans             &kp RA(E)  &trans  &trans                   &max    &kp LC(PG_UP)    &lm 8 LALT   &kp LC(PAGE_DOWN)  &kp K_APP  &kp LA(F4)
+&kp CAPS               &trans     &kp LS(RA(MINUS))  &trans     &trans  &trans                   &res    &kp LS(LC(TAB))  &lm 9 LCTRL  &kp LC(TAB)        &kp LG(D)  &kp LC(W)
+&trans                 &trans     &trans             &trans     &trans  &trans  &trans  &kp ESC  &min    &kp LA(TAB)      &trans       &trans             &trans     &trans
+&trans                 &trans                                           &trans  &mo 11  &trans   &trans  &trans           &trans       &trans             &trans     &trans
             >;
 
             label = "tab";
@@ -483,11 +490,11 @@
 
         symbols {
             bindings = <
-&kp RS(EQUAL)          &trans                    &trans  &trans     &trans    &trans                  &trans                    &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
-&kp LS(RIGHT_BRACKET)  &kp RA(Q)                 &trans  &kp RA(E)  &kp CAPS  &frac                   &kp RA(MINUS)             &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
-&kp LS(NUHS)           &kp A                     &sin    &cos       &tan      &sHoch                  &abs                      &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
-&kp RALT               &kp RA(NON_US_BACKSLASH)  &sqrt   &exp       &ln       &hoch   &trans  &trans  &kp RA(NON_US_BACKSLASH)  &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
-&trans                 &trans                                                 &trans  &trans  &trans  &trans                    &trans     &trans      &trans                 &trans           &trans
+&kp RS(EQUAL)          &trans                    &trans  &trans     &trans  &trans                    &trans                    &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
+&kp LS(RIGHT_BRACKET)  &kp RA(Q)                 &trans  &kp RA(E)  &trans  &frac                     &kp RA(MINUS)             &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
+&kp LS(NUHS)           &kp A                     &sin    &cos       &tan    &sHoch                    &abs                      &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
+&kp RALT               &kp RA(NON_US_BACKSLASH)  &sqrt   &exp       &ln     &hoch   &kp CAPS  &trans  &kp RA(NON_US_BACKSLASH)  &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
+&trans                 &trans                                               &trans  &trans    &trans  &trans                    &trans     &trans      &trans                 &trans           &trans
             >;
 
             label = "symbols";
