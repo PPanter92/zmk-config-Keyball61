@@ -92,8 +92,8 @@ layers:
   - '&mkp MB2'
   - SCROLL
   - '&mkp MB1'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ms_dc'
+  - '&ms_dc'
   - '&mkp MB1'
   - SCROLL
   - '&mkp MB2'
@@ -478,7 +478,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-esc$$
   - '&min'
   - Alt+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -637,7 +637,7 @@ layers:
   - AltGr+Q
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+E
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&frac'
   - {t: AltGr+-, s: AltGr+_}
   - '&angle'
@@ -663,7 +663,7 @@ layers:
   - '&exp'
   - '&ln'
   - '&hoch'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+\
   - '&brackets'
