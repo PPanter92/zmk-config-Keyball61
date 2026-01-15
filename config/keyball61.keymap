@@ -398,22 +398,22 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &mkp MB3  &trans    &trans                  &trans  &trans    &mkp MB3  &trans    &trans  &trans
+&trans  &mo 3   &mkp MB2  &trans    &mkp MB1  &ms_dc                  &ms_dc  &mkp MB1  &trans    &mkp MB2  &mo 3   &trans
+&trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans                                &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
             >;
         };
 
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &mkp MB3  &trans    &trans                  &trans  &trans    &mkp MB3  &trans    &trans  &trans
+&trans  &trans  &mkp MB2  &mo 2     &mkp MB1  &ms_dc                  &ms_dc  &mkp MB1  &mo 2     &mkp MB2  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans                                &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
             >;
         };
 
