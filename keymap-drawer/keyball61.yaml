@@ -836,7 +836,7 @@ layers:
   - PREV
   - PLAY PAUSE
   - NEXT
-  - MUTE
+  - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - F4
   - F5
