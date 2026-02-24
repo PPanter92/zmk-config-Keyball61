@@ -833,9 +833,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - STOP
-  - PREV
+  - $$mdi:skip-previous$$
   - PLAY PAUSE
-  - NEXT
+  - $$mdi:skip-next$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - F4
