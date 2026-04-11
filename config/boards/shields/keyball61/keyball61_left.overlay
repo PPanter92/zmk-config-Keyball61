@@ -6,6 +6,7 @@
  
 #include "keyball61.dtsi"
 #include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 
 &kscan0 {
@@ -105,13 +106,19 @@
 };
 
 / {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
+    zip_layer_proc: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <2000>;
+    };
 
-    layer0 {
-        layers = <0>;
-        input-processors = <&zip_temp_layer 4 2000>;
+    listeners {
+        compatible = "zmk,input-listeners";
+
+        trackball_listener: trackball_listener {
+            compatible = "zmk,input-listener";
+            device = <&trackball>;
+            input-processors = <&zip_layer_proc 4 2000>;
+        };
     };
 };
