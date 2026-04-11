@@ -5,6 +5,7 @@
  */
  
 #include "keyball61.dtsi"
+#include <input/processors.dtsi>
 
 
 &kscan0 {
@@ -106,7 +107,7 @@
     };
 };
 
-/ {
+{
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
