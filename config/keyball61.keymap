@@ -276,6 +276,13 @@
             bindings = <&mkp MB1 &mkp MB1>;
             label = "NEW_MACRO";
         };
+
+        mouse_cancel: mouse_cancel {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 0>;
+            label = "MOUSE_CANCEL";
+        };
     };
 
     behaviors {
@@ -387,11 +394,11 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 2   &mo 3
-&trans  &trans  &trans    &mkp MB3  &trans    &trans                  &trans  &trans    &mkp MB3  &trans    &trans  &trans
-&trans  &mo 3   &mkp MB2  &mo 2     &mkp MB1  &ms_dc                  &ms_dc  &mkp MB1  &mo 2     &mkp MB2  &mo 3   &trans
-&trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans                                &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                  &trans  &mouse_cancel N7  &mouse_cancel N8  &mouse_cancel N9  &mouse_cancel N0  &mouse_cancel MINUS
+&trans  &trans  &trans    &mkp MB3  &trans    &trans                  &trans  &trans            &mkp MB3          &trans            &trans            &trans
+&trans  &mo 3   &mkp MB2  &mo 2     &mkp MB1  &ms_dc                  &ms_dc  &mkp MB1          &mo 2             &mkp MB2          &mo 3             &trans
+&trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans            &trans            &trans            &trans            &trans
+&trans  &trans                                &trans  &trans  &trans  &trans  &trans            &trans            &trans            &trans            &trans
             >;
         };
 
