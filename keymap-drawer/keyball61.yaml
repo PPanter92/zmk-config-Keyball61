@@ -112,14 +112,14 @@ layers:
   - '&mouse_cancel M'
   - '&mouse_cancel COMMA'
   - '&mouse_cancel DOT'
-  - '&mouse_cancel FLSH'
+  - '&mouse_cancel FSLH'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mouse_cancel DELETE'
   - '&mouse_cancel BACKSPACE'
   - '&mouse_cancel SPACE'
-  - '&ENTER'
+  - '&mouse_cancel ENTER'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
