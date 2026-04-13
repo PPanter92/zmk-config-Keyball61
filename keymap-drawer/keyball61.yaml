@@ -63,31 +63,31 @@ layers:
   - F1
   - F1
   MOUSE:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mouse_cancel GRAVE'
+  - '&mouse_cancel N1'
+  - '&mouse_cancel N2'
+  - '&mouse_cancel N3'
+  - '&mouse_cancel N4'
+  - '&mouse_cancel N5'
+  - '&mouse_cancel N6'
   - '&mouse_cancel N7'
   - '&mouse_cancel N8'
   - '&mouse_cancel N9'
   - '&mouse_cancel N0'
   - '&mouse_cancel MINUS'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mouse_cancel TAB'
+  - '&mouse_cancel Q'
+  - '&mouse_cancel W'
   - '&mkp MB3'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mouse_cancel R'
+  - '&mouse_cancel T'
+  - '&mouse_cancel Y'
+  - '&mouse_cancel U'
   - '&mkp MB3'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mouse_cancel O'
+  - '&mouse_cancel P'
+  - '&mouse_cancel LBKT'
+  - '&mouse_cancel ESC'
   - SNIPE
   - '&mkp MB2'
   - SCROLL
@@ -98,28 +98,28 @@ layers:
   - SCROLL
   - '&mkp MB2'
   - SNIPE
+  - '&mouse_cancel SQT'
+  - '&mouse_cancel LEFT_GUI'
+  - '&mouse_cancel NUBS'
+  - '&mouse_cancel Z'
+  - '&mouse_cancel X'
+  - '&mouse_cancel C'
+  - '&mouse_cancel V'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mouse_cancel B'
+  - '&mouse_cancel N'
+  - '&mouse_cancel M'
+  - '&mouse_cancel COMMA'
+  - '&mouse_cancel DOT'
+  - '&mouse_cancel FLSH'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mouse_cancel DELETE'
+  - '&mouse_cancel BACKSPACE'
+  - '&mouse_cancel SPACE'
+  - '&ENTER'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
