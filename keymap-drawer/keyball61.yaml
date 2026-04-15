@@ -94,7 +94,7 @@ layers:
   - '&mkp MB1'
   - '&ms_dc'
   - '&ms_dc'
-  - '&mkp MB1'
+  - {t: '&mouse_cancel_mkp MB1', h: '&mkp MB1'}
   - SCROLL
   - '&mkp MB2'
   - SNIPE
@@ -117,7 +117,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mouse_cancel DELETE'
-  - '&mouse_cancel BACKSPACE'
+  - {t: '&mouse_cancel BACKSPACE', h: tab}
   - '&mouse_cancel SPACE'
   - '&mouse_cancel ENTER'
   - {t: '$$mdi:transfer$$', type: trans}
