@@ -117,7 +117,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mouse_cancel DELETE'
-  - tab
+  - '&mouse_cancel BACKSPACE'
   - '&mouse_cancel SPACE'
   - '&mouse_cancel ENTER'
   - {t: '$$mdi:transfer$$', type: trans}
