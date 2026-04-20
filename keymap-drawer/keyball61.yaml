@@ -448,9 +448,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: 'AltGr+]', s: 'AltGr+}'}
-  - AltGr+Q
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+E
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB3'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&max'
@@ -461,9 +461,9 @@ layers:
   - Alt+F4
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+AltGr+-, s: Sft+AltGr+_}
+  - '&mkp MB2'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB1'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&res'
   - Sft+Ctl+$$mdi:keyboard-tab$$
@@ -481,7 +481,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - '&min'
   - Alt+$$mdi:keyboard-tab$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -858,7 +858,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
