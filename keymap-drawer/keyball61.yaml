@@ -214,12 +214,12 @@ layers:
   - '&mouse_cancel ESC'
   - {type: held}
   - '&mkp MB2'
-  - {t: SCROLL, type: held alternate}
+  - {t: SCROLL, h: toggle, type: held alternate}
   - '&mkp MB1'
   - '&ms_dc'
   - '&ms_dc'
   - '&mkp MB1'
-  - {t: SCROLL, type: held alternate}
+  - {t: SCROLL, h: toggle, type: held alternate}
   - '&mkp MB2'
   - {type: held alternate}
   - '&mouse_cancel SQT'
