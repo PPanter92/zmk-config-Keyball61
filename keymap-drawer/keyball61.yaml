@@ -51,17 +51,17 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - F1
-  - F1
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: symbols}
   - {t: '$$mdi:backspace$$', h: tab}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: nav}
   - {t: number, h: toggle}
-  - F1
-  - F1
-  - F1
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   MOUSE:
   - '&mouse_cancel GRAVE'
   - '&mouse_cancel N1'
@@ -765,7 +765,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - Ctl+$$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
+  - $$mdi:keyboard-tab-reverse$$
   - Ctl+$$mdi:arrow-right-bold$$
   - END
   - Ctl+V
@@ -777,7 +777,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - PG UP
   - $$mdi:arrow-left-bold$$
-  - $$mdi:keyboard-tab-reverse$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:keyboard-tab$$
