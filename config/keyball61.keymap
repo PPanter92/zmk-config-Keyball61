@@ -270,11 +270,11 @@
             label = "DDX";
         };
 
-        ms_dc: new_macro {
+        ms_dc: doubleClick {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB1 &mkp MB1>;
-            label = "NEW_MACRO";
+            label = "DOUBLECLICK";
         };
 
         mouse_cancel: mouse_cancel {
@@ -403,6 +403,30 @@
             require-prior-idle-ms = <150>;
             flavor = "balanced";
         };
+
+        mouse_MoTapHp: mouse_MoTapHp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_MOTAPHP";
+            bindings = <&mo>, <&mouse_cancel>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "hold-preferred";
+            hold-trigger-key-positions = <20 32 18 30 44 19 31 33 34 7 9 8 21 23 35 54 24 12 13 15 26 45>;
+        };
+
+        mouse_MoTap: mouse_MoTap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_MOTAP";
+            bindings = <&mo>, <&mouse_cancel>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -422,11 +446,11 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&mouse_cancel GRAVE     &mouse_cancel N1    &mouse_cancel N2  &mouse_cancel N3  &mouse_cancel N4  &mouse_cancel N5                                &mouse_cancel N6     &mouse_cancel N7     &mouse_cancel N8  &mouse_cancel N9     &mouse_cancel N0   &mouse_cancel MINUS
-&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mkp MB3          &mouse_cancel R   &mouse_cancel T                                 &mouse_cancel Y      &mouse_cancel U      &mkp MB3          &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
-&mouse_cancel ESC       &mo 3               &mkp MB2          &mo 2             &mkp MB1          &ms_dc                                          &ms_dc               &mkp MB1             &mo 2             &mkp MB2             &mo 3              &mouse_cancel SQT
-&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &mouse_cancel X   &mouse_cancel C   &mouse_cancel V   &trans                &trans  &mouse_cancel B      &mouse_cancel N      &mouse_cancel M   &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
-&trans                  &trans                                                                    &trans            &mouse_cancel DELETE  &mo 7   &mouse_cancel SPACE  &mouse_cancel ENTER  &trans            &trans               &trans             &trans
+&mouse_cancel GRAVE     &mouse_cancel N1    &mouse_cancel N2  &mouse_cancel N3  &mouse_cancel N4  &mouse_cancel N5                                                      &mouse_cancel N6     &mouse_cancel N7       &mouse_cancel N8  &mouse_cancel N9     &mouse_cancel N0   &mouse_cancel MINUS
+&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mkp MB3          &mouse_cancel R   &mouse_cancel T                                                       &mouse_cancel Y      &mouse_cancel U        &mkp MB3          &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
+&mouse_cancel ESC       &mo 3               &mkp MB2          &mo 2             &mkp MB1          &ms_dc                                                                &ms_dc               &mkp MB1               &mo 2             &mkp MB2             &mo 3              &mouse_cancel SQT
+&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &mouse_cancel X   &mouse_cancel C   &mouse_cancel V   &trans                  &trans                      &mouse_cancel B      &mouse_cancel N        &mouse_cancel M   &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
+&trans                  &trans                                                                    &trans            &mouse_MoTap 10 DELETE  &mouse_MoTapHp 7 BACKSPACE  &mouse_cancel SPACE  &mouse_MoTap 12 ENTER  &trans            &trans               &trans             &trans
             >;
         };
 
