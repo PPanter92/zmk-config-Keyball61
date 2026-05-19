@@ -81,20 +81,6 @@
             label = "ABS";
         };
 
-        comO: comO {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(N7) &kp LS(RIGHT_BRACKET)>;
-            label = "COMO";
-        };
-
-        comommentClose: comC {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(RIGHT_BRACKET) &kp LS(N7)>;
-            label = "COMC";
-        };
-
         code: code {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -289,6 +275,13 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &mkp MACRO_PLACEHOLDER &to 0>;
             label = "MOUSE_CANCEL_MKP";
+        };
+
+        dash: dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp MINUS &kp MINUS>;
+            label = "DASH";
         };
     };
 
@@ -549,11 +542,11 @@
 
         symbols {
             bindings = <
-&kp RS(EQUAL)          &trans                    &trans  &trans     &trans  &trans                    &trans                    &paran     &code       &kp RA(RIGHT_BRACKET)  &comO            &kp EQUAL
-&kp LS(RIGHT_BRACKET)  &kp RA(Q)                 &trans  &kp RA(E)  &trans  &frac                     &kp RA(MINUS)             &angle     &kp LS(N0)  &kp LS(MINUS)          &comommentClose  &kp RIGHT_BRACKET
-&kp LS(NUHS)           &kp A                     &sin    &cos       &tan    &sHoch                    &abs                      &curly     &kp RA(N7)  &kp RA(N0)             &quote           &kp NON_US_HASH
-&kp RALT               &kp RA(NON_US_BACKSLASH)  &sqrt   &exp       &ln     &hoch   &kp CAPS  &trans  &kp RA(NON_US_BACKSLASH)  &brackets  &kp RA(N8)  &kp RA(N9)             &squote          &kp LS(SLASH)
-&trans                 &trans                                               &trans  &trans    &trans  &trans                    &trans     &trans      &trans                 &trans           &trans
+&kp RS(EQUAL)          &trans     &quote  &trans     &trans  &trans                    &trans                    &paran                 &kp LS(N8)  &kp LS(N9)     &code           &kp EQUAL
+&kp LS(RIGHT_BRACKET)  &kp RA(Q)  &trans  &kp RA(E)  &trans  &frac                     &kp RA(MINUS)             &kp RA(RIGHT_BRACKET)  &kp LS(N0)  &kp LS(MINUS)  &dash           &kp RIGHT_BRACKET
+&kp LS(NUHS)           &kp A      &sin    &cos       &tan    &sHoch                    &abs                      &curly                 &kp RA(N7)  &kp RA(N0)     &squote         &kp NON_US_HASH
+&kp RALT               &angle     &sqrt   &exp       &ln     &hoch   &kp CAPS  &trans  &kp RA(NON_US_BACKSLASH)  &brackets              &kp RA(N8)  &kp RA(N9)     &kp LS(PERIOD)  &kp LS(SLASH)
+&trans                 &trans                                &trans  &trans    &trans  &trans                    &trans                 &trans      &trans         &trans          &trans
             >;
 
             label = "symbols";
