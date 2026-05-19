@@ -623,15 +623,15 @@ layers:
   symbols:
   - {t: Sft+=, s: Sft++}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&quote'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&paran'
+  - {t: Sft+8, s: Sft+*}
+  - {t: Sft+9, s: Sft+(}
   - '&code'
-  - {t: 'AltGr+]', s: 'AltGr+}'}
-  - '&comO'
   - {t: '=', s: +}
   - {t: 'Sft+]', s: 'Sft+}'}
   - AltGr+Q
@@ -640,10 +640,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&frac'
   - {t: AltGr+-, s: AltGr+_}
-  - '&angle'
+  - {t: 'AltGr+]', s: 'AltGr+}'}
   - {t: Sft+0, s: Sft+)}
   - {t: Sft+-, s: Sft+_}
-  - '&comommentClose'
+  - '&dash'
   - {t: ']', s: '}'}
   - Sft+#
   - A
@@ -655,10 +655,10 @@ layers:
   - '&curly'
   - {t: AltGr+7, s: AltGr+&}
   - {t: AltGr+0, s: AltGr+)}
-  - '&quote'
+  - '&squote'
   - '#'
   - $$mdi:apple-keyboard-option$$
-  - AltGr+\
+  - '&angle'
   - '&sqrt'
   - '&exp'
   - '&ln'
@@ -669,7 +669,7 @@ layers:
   - '&brackets'
   - {t: AltGr+8, s: AltGr+*}
   - {t: AltGr+9, s: AltGr+(}
-  - '&squote'
+  - Sft+.
   - {t: Sft+/, s: 'Sft+?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
