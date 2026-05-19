@@ -663,7 +663,7 @@ layers:
   - '&exp'
   - '&ln'
   - '&hoch'
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+\
   - '&brackets'
