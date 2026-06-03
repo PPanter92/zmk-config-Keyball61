@@ -109,7 +109,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mouse_cancel B'
   - '&mouse_cancel N'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mouse_cancel M'
   - '&mouse_cancel COMMA'
   - '&mouse_cancel DOT'
   - '&mouse_cancel FSLH'
