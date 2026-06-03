@@ -47,7 +47,7 @@ layers:
   - media
   - B
   - N
-  - M
+  - {t: M, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -109,7 +109,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mouse_cancel B'
   - '&mouse_cancel N'
-  - '&mouse_cancel M'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mouse_cancel COMMA'
   - '&mouse_cancel DOT'
   - '&mouse_cancel FSLH'
@@ -868,3 +868,16 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [31, 54]
+  k: RMETA
+- p: [54, 32]
+  k: $$mdi:apple-keyboard-control$$
+- p: [54, 33]
+  k: $$mdi:apple-keyboard-option$$
+- p: [53, 28]
+  k: LMETA
+- p: [53, 27]
+  k: LMETA
+- p: [53, 26]
+  k: $$mdi:apple-keyboard-option$$
