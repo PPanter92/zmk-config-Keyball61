@@ -427,31 +427,37 @@
         rgui_tap {
             bindings = <&kp RMETA>;
             key-positions = <31 54>;
+            require-prior-idle-ms = <150>;
         };
 
         rctrl_tap {
             bindings = <&kp RCTRL>;
             key-positions = <54 32>;
+            require-prior-idle-ms = <150>;
         };
 
         ralt_tap {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <54 33>;
+            require-prior-idle-ms = <150>;
         };
 
         lgui_tap {
             bindings = <&kp LMETA>;
             key-positions = <53 28>;
+            require-prior-idle-ms = <150>;
         };
 
         lctrl_tap {
             bindings = <&kp LMETA>;
             key-positions = <53 27>;
+            require-prior-idle-ms = <150>;
         };
 
         lalt_tap {
             bindings = <&kp LALT>;
             key-positions = <53 26>;
+            require-prior-idle-ms = <150>;
         };
     };
 
@@ -475,7 +481,7 @@
 &mouse_cancel GRAVE     &mouse_cancel N1    &mouse_cancel N2  &mouse_cancel N3  &mouse_cancel N4  &mouse_cancel N5                                                      &mouse_cancel N6     &mouse_cancel N7       &mouse_cancel N8  &mouse_cancel N9     &mouse_cancel N0   &mouse_cancel MINUS
 &mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mkp MB3          &mouse_cancel R   &mouse_cancel T                                                       &mouse_cancel Y      &mouse_cancel U        &mkp MB3          &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
 &mouse_cancel ESC       &mo 3               &mkp MB2          &mo 2             &mkp MB1          &ms_dc                                                                &ms_dc               &mkp MB1               &mo 2             &mkp MB2             &mo 3              &mouse_cancel SQT
-&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &mouse_cancel X   &mouse_cancel C   &mouse_cancel V   &trans                  &trans                      &mouse_cancel B      &mouse_cancel N        &trans            &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
+&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &mouse_cancel X   &mouse_cancel C   &mouse_cancel V   &trans                  &trans                      &mouse_cancel B      &mouse_cancel N        &mouse_cancel M   &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
 &trans                  &trans                                                                    &trans            &mouse_MoTap 10 DELETE  &mouse_MoTapHp 7 BACKSPACE  &mouse_cancel SPACE  &mouse_MoTap 12 ENTER  &trans            &trans               &trans             &trans
             >;
         };
