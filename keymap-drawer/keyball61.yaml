@@ -878,6 +878,6 @@ combos:
 - p: [53, 28]
   k: LMETA
 - p: [53, 27]
-  k: LMETA
+  k: $$mdi:apple-keyboard-control$$
 - p: [53, 26]
   k: $$mdi:apple-keyboard-option$$
