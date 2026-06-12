@@ -449,7 +449,7 @@
         };
 
         lctrl_tap {
-            bindings = <&kp LMETA>;
+            bindings = <&kp LCTRL>;
             key-positions = <53 27>;
             require-prior-idle-ms = <150>;
         };
