@@ -851,7 +851,7 @@ layers:
   - $$mdi:volume-off$$
   - {type: held}
   - {type: held alternate}
-  - SLEEP
+  - SLEEP MODE
   - F1
   - F2
   - F3
