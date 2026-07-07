@@ -82,9 +82,9 @@ layers:
   - '&mouse_cancel R'
   - '&mouse_cancel T'
   - '&mouse_cancel Y'
-  - '&mouse_cancel U'
-  - '&mouse_cancel I'
-  - '&mouse_cancel O'
+  - '&mouse_cancel_hrml RGUI U'
+  - '&mouse_cancel_hrml RCTRL I'
+  - '&mouse_cancel_hrml LEFT_ALT O'
   - '&mouse_cancel P'
   - '&mouse_cancel LBKT'
   - '&mouse_cancel ESC'
@@ -144,9 +144,9 @@ layers:
   - '&mouse_cancel R'
   - '&mouse_cancel T'
   - '&mouse_cancel Y'
-  - '&mouse_cancel U'
-  - '&mouse_cancel I'
-  - '&mouse_cancel O'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mouse_cancel P'
   - '&mouse_cancel LBKT'
   - '&mouse_cancel ESC'
