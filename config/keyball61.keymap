@@ -467,11 +467,11 @@
         default_layer {
             label = "default";
             bindings = <
-&kp GRAVE     &kp N1        &kp N2             &kp N3          &kp N4             &kp N5                                             &kp N6     &kp N7              &kp N8          &kp N9             &kp N0         &kp MINUS
-&kp TAB       &kp Q         &kp W              &kp E           &kp R              &kp T                                              &kp Y      &kp U               &kp I           &kp O              &kp P          &kp LBKT
-&kp ESC       &kp A         &HRM_R LEFT_ALT S  &HRM_R LCTRL D  &HRM_R LEFT_GUI F  &kp G                                              &kp H      &HRM_L RIGHT_GUI J  &HRM_L RCTRL K  &HRM_L LEFT_ALT L  &kp SEMICOLON  &kp SQT
-&kp LEFT_GUI  &kp NUBS      &kp Z              &kp X           &kp C              &kp V      &mo 13            &mo 13                &kp B      &kp N               &HRM_L RCTRL M  &kp COMMA          &kp DOT        &kp FSLH
-&kp LCTRL     &kp LEFT_ALT                                                        &kp LSHFT  &MoTap 10 DELETE  &MoTapHp 7 BACKSPACE  &kp SPACE  &MoTap 12 ENTER     &tog 5          &kp RIGHT_ALT      &kp RCTRL      &kp RSHFT
+&kp GRAVE     &kp N1        &kp N2         &kp N3          &kp N4         &kp N5                                             &kp N6     &kp N7           &kp N8          &kp N9             &kp N0         &kp MINUS
+&kp TAB       &kp Q         &HRM_R LALT W  &HRM_R LCTRL E  &HRM_R LGUI R  &kp T                                              &kp Y      &HRM_L RGUI U    &HRM_L RCTRL I  &HRM_L LEFT_ALT O  &kp P          &kp LBKT
+&kp ESC       &kp A         &kp S          &kp D           &kp F          &kp G                                              &kp H      &kp J            &kp K           &kp L              &kp SEMICOLON  &kp SQT
+&kp LEFT_GUI  &kp NUBS      &kp Z          &kp X           &kp C          &kp V      &mo 13            &mo 13                &kp B      &kp N            &kp M           &kp COMMA          &kp DOT        &kp FSLH
+&kp LCTRL     &kp LEFT_ALT                                                &kp LSHFT  &MoTap 10 DELETE  &MoTapHp 7 BACKSPACE  &kp SPACE  &MoTap 12 ENTER  &tog 5          &kp RIGHT_ALT      &kp RCTRL      &kp RSHFT
             >;
         };
 
@@ -479,9 +479,9 @@
             label = "MOUSE";
             bindings = <
 &mouse_cancel GRAVE     &mouse_cancel N1    &mouse_cancel N2  &mouse_cancel N3  &mouse_cancel N4  &mouse_cancel N5                                                      &mouse_cancel N6     &mouse_cancel N7       &mouse_cancel N8  &mouse_cancel N9     &mouse_cancel N0   &mouse_cancel MINUS
-&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mkp MB3          &mouse_cancel R   &mouse_cancel T                                                       &mouse_cancel Y      &mouse_cancel U        &mkp MB3          &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
-&mouse_cancel ESC       &mo 3               &mkp MB2          &mo 2             &mkp MB1          &ms_dc                                                                &ms_dc               &mkp MB1               &mo 2             &mkp MB2             &mo 3              &mouse_cancel SQT
-&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &mouse_cancel X   &mouse_cancel C   &mouse_cancel V   &trans                  &trans                      &mouse_cancel B      &mouse_cancel N        &mouse_cancel M   &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
+&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mouse_cancel E   &mouse_cancel R   &mouse_cancel T                                                       &mouse_cancel Y      &mouse_cancel U        &mouse_cancel I   &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
+&mouse_cancel ESC       &mo 3               &mkp MB2          &mkp MB3          &mkp MB1          &ms_dc                                                                &ms_dc               &mkp MB1               &mkp MB3          &mkp MB2             &mo 3              &mouse_cancel SQT
+&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &mo 2             &mouse_cancel C   &mouse_cancel V   &trans                  &trans                      &mouse_cancel B      &mouse_cancel N        &mo 2             &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
 &trans                  &trans                                                                    &trans            &mouse_MoTap 10 DELETE  &mouse_MoTapHp 7 BACKSPACE  &mouse_cancel SPACE  &mouse_MoTap 12 ENTER  &trans            &trans               &trans             &trans
             >;
         };
@@ -490,9 +490,9 @@
             label = "SCROLL";
             bindings = <
 &mouse_cancel GRAVE     &mouse_cancel N1    &mouse_cancel N2  &mouse_cancel N3  &mouse_cancel N4  &mouse_cancel N5                                                 &mouse_cancel N6     &mouse_cancel N7     &mouse_cancel N8  &mouse_cancel N9     &mouse_cancel N0   &mouse_cancel MINUS
-&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mkp MB3          &mouse_cancel R   &mouse_cancel T                                                  &mouse_cancel Y      &mouse_cancel U      &mkp MB3          &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
-&mouse_cancel ESC       &mo 3               &mkp MB2          &trans            &mkp MB1          &ms_dc                                                           &ms_dc               &mkp MB1             &trans            &mkp MB2             &mo 3              &mouse_cancel SQT
-&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &mouse_cancel X   &mouse_cancel C   &mouse_cancel V   &trans                &trans                   &mouse_cancel B      &mouse_cancel N      &mouse_cancel M   &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
+&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mouse_cancel I   &mouse_cancel R   &mouse_cancel T                                                  &mouse_cancel Y      &mouse_cancel U      &mouse_cancel I   &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
+&mouse_cancel ESC       &mo 3               &mkp MB2          &mkp MB3          &mkp MB1          &ms_dc                                                           &ms_dc               &mkp MB1             &mkp MB3          &mkp MB2             &mo 3              &mouse_cancel SQT
+&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &trans            &mouse_cancel C   &mouse_cancel V   &trans                &trans                   &mouse_cancel B      &mouse_cancel N      &trans            &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
 &trans                  &trans                                                                    &trans            &mouse_cancel DELETE  &mouse_cancel BACKSPACE  &mouse_cancel SPACE  &mouse_cancel ENTER  &trans            &trans               &trans             &trans
             >;
         };
@@ -501,9 +501,9 @@
             label = "SNIPE";
             bindings = <
 &mouse_cancel GRAVE     &mouse_cancel N1    &mouse_cancel N2  &mouse_cancel N3  &mouse_cancel N4  &mouse_cancel N5                                                 &mouse_cancel N6     &mouse_cancel N7     &mouse_cancel N8  &mouse_cancel N9     &mouse_cancel N0   &mouse_cancel MINUS
-&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mkp MB3          &mouse_cancel R   &mouse_cancel T                                                  &mouse_cancel Y      &mouse_cancel U      &mkp MB3          &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
-&mouse_cancel ESC       &trans              &mkp MB2          &to 2             &mkp MB1          &ms_dc                                                           &ms_dc               &mkp MB1             &to 2             &mkp MB2             &trans             &mouse_cancel SQT
-&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &mouse_cancel X   &mouse_cancel C   &mouse_cancel V   &trans                &trans                   &mouse_cancel B      &mouse_cancel N      &mouse_cancel M   &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
+&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mouse_cancel E   &mouse_cancel R   &mouse_cancel T                                                  &mouse_cancel Y      &mouse_cancel U      &mouse_cancel I   &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
+&mouse_cancel ESC       &trans              &mkp MB2          &mkp MB3          &mkp MB1          &ms_dc                                                           &ms_dc               &mkp MB1             &mkp MB3          &mkp MB2             &trans             &mouse_cancel SQT
+&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &to 2             &mouse_cancel C   &mouse_cancel V   &trans                &trans                   &mouse_cancel B      &mouse_cancel N      &to 2             &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
 &trans                  &trans                                                                    &trans            &mouse_cancel DELETE  &mouse_cancel BACKSPACE  &mouse_cancel SPACE  &mouse_cancel ENTER  &trans            &trans               &trans             &trans
             >;
         };
@@ -625,6 +625,17 @@
             >;
 
             label = "media";
+        };
+
+        layer_14 {
+            label = "default_backup";
+            bindings = <
+&kp GRAVE     &kp N1        &kp N2             &kp N3          &kp N4             &kp N5                                             &kp N6     &kp N7              &kp N8          &kp N9             &kp N0         &kp MINUS
+&kp TAB       &kp Q         &kp W              &kp E           &kp R              &kp T                                              &kp Y      &kp U               &kp I           &kp O              &kp P          &kp LBKT
+&kp ESC       &kp A         &HRM_R LEFT_ALT S  &HRM_R LCTRL D  &HRM_R LEFT_GUI F  &kp G                                              &kp H      &HRM_L RIGHT_GUI J  &HRM_L RCTRL K  &HRM_L LEFT_ALT L  &kp SEMICOLON  &kp SQT
+&kp LEFT_GUI  &kp NUBS      &kp Z              &kp X           &kp C              &kp V      &mo 13            &mo 13                &kp B      &kp N               &kp M           &kp COMMA          &kp DOT        &kp FSLH
+&kp LCTRL     &kp LEFT_ALT                                                        &kp LSHFT  &MoTap 10 DELETE  &MoTapHp 7 BACKSPACE  &kp SPACE  &MoTap 12 ENTER     &tog 5          &kp RIGHT_ALT      &kp RCTRL      &kp RSHFT
+            >;
         };
     };
 };
