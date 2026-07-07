@@ -83,7 +83,7 @@ layers:
   - '&mouse_cancel T'
   - '&mouse_cancel Y'
   - '&mouse_cancel_hrml RGUI U'
-  - '&mouse_cancel_hrml RCTRL I'
+  - '&mouse_cancel_hrml I A'
   - '&mouse_cancel_hrml LEFT_ALT O'
   - '&mouse_cancel P'
   - '&mouse_cancel LBKT'
