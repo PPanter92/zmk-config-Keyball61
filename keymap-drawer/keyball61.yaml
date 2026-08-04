@@ -32,7 +32,7 @@ layers:
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - H
-  - {t: J, h: RIGHT GUI}
+  - J
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, s: ':'}
@@ -40,13 +40,13 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - NUBS
   - Z
-  - X
+  - {t: X, h: '$$mdi:apple-keyboard-control$$'}
   - C
   - V
   - media
   - media
   - B
-  - N
+  - {t: N, h: RMETA}
   - {t: M, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ',', s: <}
   - {t: ., s: '>'}
@@ -102,7 +102,7 @@ layers:
   - '&mouse_cancel LEFT_GUI'
   - '&mouse_cancel NUBS'
   - '&mouse_cancel Z'
-  - '&mouse_cancel X'
+  - '&mouse_cancel_hrm_l'
   - '&mouse_cancel C'
   - '&mouse_cancel V'
   - {t: '$$mdi:transfer$$', type: trans}
