@@ -580,11 +580,11 @@
 
         tab {
             bindings = <
-&trans    &trans  &trans    &trans    &trans    &trans                   &trans  &mkp MB1         &mkp MB3     &mkp MB2           &trans     &trans
-&trans    &trans  &trans    &mkp MB3  &trans    &trans                   &max    &kp LC(PG_UP)    &lm 8 LALT   &kp LC(PAGE_DOWN)  &kp K_APP  &kp LA(F4)
-&kp CAPS  &trans  &mkp MB2  &trans    &mkp MB1  &trans                   &res    &kp LS(LC(TAB))  &lm 9 LCTRL  &kp LC(TAB)        &kp LG(D)  &kp LC(W)
-&trans    &trans  &trans    &trans    &trans    &trans  &trans  &kp ESC  &min    &kp LA(TAB)      &kp LCTRL    &trans             &trans     &trans
-&trans    &trans                                &trans  &mo 11  &trans   &trans  &trans           &trans       &trans             &trans     &trans
+&trans    &trans         &trans    &trans    &trans    &trans                   &trans  &mkp MB1         &mkp MB3     &mkp MB2           &trans     &trans
+&trans    &trans         &trans    &mkp MB3  &trans    &trans                   &max    &kp LC(PG_UP)    &lm 8 LALT   &kp LC(PAGE_DOWN)  &kp K_APP  &kp LA(F4)
+&kp CAPS  &kp LG(LS(S))  &mkp MB2  &trans    &mkp MB1  &trans                   &res    &kp LS(LC(TAB))  &lm 9 LCTRL  &kp LC(TAB)        &kp LG(D)  &kp LC(W)
+&trans    &trans         &trans    &trans    &trans    &trans  &trans  &kp ESC  &min    &kp LA(TAB)      &kp LG(TAB)  &trans             &trans     &trans
+&trans    &trans                                       &trans  &mo 11  &trans   &trans  &trans           &trans       &trans             &trans     &trans
             >;
 
             label = "tab";
