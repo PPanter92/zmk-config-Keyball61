@@ -102,7 +102,7 @@ layers:
   - '&mouse_cancel LEFT_GUI'
   - '&mouse_cancel NUBS'
   - '&mouse_cancel Z'
-  - '&mouse_cancel_hrm_l'
+  - {t: '&mouse_cancel X', h: '&mouse_cancel LCTRL'}
   - '&mouse_cancel C'
   - '&mouse_cancel V'
   - {t: '$$mdi:transfer$$', type: trans}
