@@ -435,9 +435,23 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <0>;
             flavor = "balanced";
             hold-trigger-key-positions = <56 55 53 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 52 54 12>;
+            hold-trigger-on-release;
+        };
+
+        hrm_l_mouse_cancel: hrm_l_mouse_cancel {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_L_MOUSE_CANCEL";
+            bindings = <&mouse_cancel>, <&mouse_cancel>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <56 55 53 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 52 54>;
             hold-trigger-on-release;
         };
     };
@@ -488,22 +502,22 @@
         default_layer {
             label = "default";
             bindings = <
-&kp GRAVE     &kp N1        &kp N2             &kp N3          &kp N4             &kp N5                                             &kp N6     &kp N7           &kp N8          &kp N9             &kp N0         &kp MINUS
-&kp TAB       &kp Q         &kp W              &kp E           &kp R              &kp T                                              &kp Y      &kp U            &kp I           &kp O              &kp P          &kp LBKT
-&kp ESC       &kp A         &HRM_R LEFT_ALT S  &HRM_R LCTRL D  &HRM_R LEFT_GUI F  &kp G                                              &kp H      &kp J            &HRM_L RCTRL K  &HRM_L LEFT_ALT L  &kp SEMICOLON  &kp SQT
-&kp LEFT_GUI  &kp NUBS      &kp Z              &HRM_R LCTRL X  &kp C              &kp V      &mo 13            &mo 13                &kp B      &HRM_L RMETA N   &HRM_L RCTRL M  &kp COMMA          &kp DOT        &kp FSLH
-&kp LCTRL     &kp LEFT_ALT                                                        &kp LSHFT  &MoTap 10 DELETE  &MoTapHp 7 BACKSPACE  &kp SPACE  &MoTap 12 ENTER  &tog 5          &kp RIGHT_ALT      &kp RCTRL      &kp RSHFT
+&kp GRAVE     &kp N1        &kp N2             &kp N3          &kp N4         &kp N5                                             &kp N6     &kp N7           &kp N8          &kp N9             &kp N0         &kp MINUS
+&kp TAB       &kp Q         &kp W              &kp E           &kp R          &kp T                                              &kp Y      &kp U            &kp I           &kp O              &kp P          &kp LBKT
+&kp ESC       &kp A         &kp S              &kp D           &kp F          &kp G                                              &kp H      &kp J            &kp K           &kp L              &kp SEMICOLON  &kp SQT
+&kp LEFT_GUI  &kp NUBS      &HRM_R LEFT_ALT Z  &HRM_R LCTRL X  &HRM_R LGUI C  &kp V      &mo 13            &mo 13                &kp B      &HRM_L RMETA N   &HRM_L RCTRL M  &HRM_L LALT COMMA  &kp DOT        &kp FSLH
+&kp LCTRL     &kp LEFT_ALT                                                    &kp LSHFT  &MoTap 10 DELETE  &MoTapHp 7 BACKSPACE  &kp SPACE  &MoTap 12 ENTER  &tog 5          &kp RIGHT_ALT      &kp RCTRL      &kp RSHFT
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&mouse_cancel GRAVE     &mouse_cancel N1    &mouse_cancel N2  &mouse_cancel N3             &mouse_cancel N4  &mouse_cancel N5                                                      &mouse_cancel N6     &mouse_cancel N7       &mouse_cancel N8  &mouse_cancel N9     &mouse_cancel N0   &mouse_cancel MINUS
-&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W   &mkp MB3                     &mouse_cancel R   &mouse_cancel T                                                       &mouse_cancel Y      &mouse_cancel U        &mkp MB3          &mouse_cancel O      &mouse_cancel P    &mouse_cancel LBKT
-&mouse_cancel ESC       &mo 3               &mkp MB2          &mo 2                        &mkp MB1          &ms_dc                                                                &ms_dc               &mkp MB1               &mo 2             &mkp MB2             &mo 3              &mouse_cancel SQT
-&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &mouse_cancel Z   &hrm_r_mouse_cancel LCTRL X  &mouse_cancel C   &mouse_cancel V   &trans                  &trans                      &mouse_cancel B      &mouse_cancel N        &trans            &mouse_cancel COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
-&trans                  &trans                                                                               &to 0             &mouse_MoTap 10 DELETE  &mouse_MoTapHp 7 BACKSPACE  &mouse_cancel SPACE  &mouse_MoTap 12 ENTER  &trans            &trans               &trans             &trans
+&mouse_cancel GRAVE     &mouse_cancel N1    &mouse_cancel N2            &mouse_cancel N3             &mouse_cancel N4            &mouse_cancel N5                                                      &mouse_cancel N6     &mouse_cancel N7            &mouse_cancel N8             &mouse_cancel N9                &mouse_cancel N0   &mouse_cancel MINUS
+&mouse_cancel TAB       &mouse_cancel Q     &mouse_cancel W             &mkp MB3                     &mouse_cancel R             &mouse_cancel T                                                       &mouse_cancel Y      &mouse_cancel U             &mkp MB3                     &mouse_cancel O                 &mouse_cancel P    &mouse_cancel LBKT
+&mouse_cancel ESC       &mo 3               &mkp MB2                    &mo 2                        &mkp MB1                    &ms_dc                                                                &ms_dc               &mkp MB1                    &mo 2                        &mkp MB2                        &mo 3              &mouse_cancel SQT
+&mouse_cancel LEFT_GUI  &mouse_cancel NUBS  &hrm_r_mouse_cancel LALT Z  &hrm_r_mouse_cancel LCTRL X  &hrm_r_mouse_cancel LGUI C  &mouse_cancel V   &trans                  &trans                      &mouse_cancel B      &hrm_l_mouse_cancel RGUI N  &hrm_l_mouse_cancel RCTRL M  &hrm_l_mouse_cancel LALT COMMA  &mouse_cancel DOT  &mouse_cancel FSLH
+&trans                  &trans                                                                                                   &to 0             &mouse_MoTap 10 DELETE  &mouse_MoTapHp 7 BACKSPACE  &mouse_cancel SPACE  &mouse_MoTap 12 ENTER       &trans                       &trans                          &trans             &trans
             >;
         };
 
