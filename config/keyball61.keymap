@@ -461,38 +461,43 @@
 
         rgui_tap {
             bindings = <&kp RMETA>;
-            key-positions = <31 54>;
+            key-positions = <54 45>;
             require-prior-idle-ms = <150>;
         };
 
         rctrl_tap {
             bindings = <&kp RCTRL>;
-            key-positions = <54 32>;
+            key-positions = <54 46>;
             require-prior-idle-ms = <150>;
         };
 
         ralt_tap {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <54 33>;
+            key-positions = <54 47>;
             require-prior-idle-ms = <150>;
         };
 
         lgui_tap {
             bindings = <&kp LMETA>;
-            key-positions = <53 28>;
+            key-positions = <53 40>;
             require-prior-idle-ms = <150>;
         };
 
         lctrl_tap {
             bindings = <&kp LCTRL>;
-            key-positions = <53 27>;
+            key-positions = <53 39>;
             require-prior-idle-ms = <150>;
         };
 
         lalt_tap {
             bindings = <&kp LALT>;
-            key-positions = <53 26>;
+            key-positions = <53 38>;
             require-prior-idle-ms = <150>;
+        };
+
+        number_layer {
+            bindings = <&mo 5>;
+            key-positions = <26 27>;
         };
     };
 
@@ -556,11 +561,11 @@
 
         number {
             bindings = <
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &kp RA(NON_US_BACKSLASH)  &kp KP_DIVIDE    &kp LS(N8)       &kp LS(N9)       &trans        &trans
-&trans      &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans                             &kp KP_MULTIPLY           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &sl 6
-&trans      &trans        &trans        &trans        &trans        &trans                             &sHoch                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD    &kp COMMA
-&trans      &trans        &trans        &trans        &trans        &sys_reset    &bootloader  &trans  &kp KP_NUMBER_0           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &kp LS(MINUS)
-&bt BT_CLR  &trans                                                  &trans        &trans       &trans  &trans                    &trans           &trans           &trans           &trans        &trans
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                               &kp RA(NON_US_BACKSLASH)  &kp KP_DIVIDE    &kp LS(N8)       &kp LS(N9)       &trans        &trans
+&trans      &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans                                     &kp KP_MULTIPLY           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &sl 6
+&trans      &trans        &trans        &trans        &trans        &trans                                     &sHoch                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD    &kp COMMA
+&trans      &trans        &trans        &trans        &trans        &sys_reset    &bootloader  &kp KP_NUMLOCK  &kp KP_NUMBER_0           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &kp LS(MINUS)
+&bt BT_CLR  &trans                                                  &trans        &trans       &trans          &trans                    &trans           &trans           &trans           &trans        &trans
             >;
 
             label = "number";
@@ -568,11 +573,11 @@
 
         numbers2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp X   &kp Y   &kp Z   &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp T   &trans  &kp I   &kp E   &pi             &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &dx     &tan    &cos    &sin    &kp A           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ddx    &ln     &exp    &sqrt   &kp SCROLLLOCK  &kp KP_NUM
-&trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans  &kp X   &kp Y   &kp Z   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &kp T   &trans  &kp I   &kp E   &pi     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &dx     &tan    &cos    &sin    &kp A   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SCROLLLOCK  &ddx    &ln     &exp    &sqrt   &trans  &trans
+&trans  &trans                          &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "numbers2";
