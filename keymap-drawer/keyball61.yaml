@@ -337,8 +337,8 @@ layers:
   - {t: numbers2, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&sHoch'
@@ -354,7 +354,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP NUMLOCK
   - KP 0
   - KP 1
   - KP 2
@@ -416,13 +416,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - SCROLLLOCK
   - '&ddx'
   - '&ln'
   - '&exp'
   - '&sqrt'
-  - SCROLLLOCK
-  - KP NUM
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -869,15 +869,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [31, 54]
+- p: [54, 45]
   k: RMETA
-- p: [54, 32]
+- p: [54, 46]
   k: $$mdi:apple-keyboard-control$$
-- p: [54, 33]
+- p: [54, 47]
   k: $$mdi:apple-keyboard-option$$
-- p: [53, 28]
+- p: [53, 40]
   k: LMETA
-- p: [53, 27]
+- p: [53, 39]
   k: $$mdi:apple-keyboard-control$$
-- p: [53, 26]
+- p: [53, 38]
   k: $$mdi:apple-keyboard-option$$
+- p: [26, 27]
+  k: number
